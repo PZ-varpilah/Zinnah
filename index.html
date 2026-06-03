@@ -26,6 +26,7 @@ header{
     color:white;
     text-align:center;
     padding:60px 20px;
+    position:relative;
 }
 
 .profile-pic{
@@ -44,6 +45,29 @@ header h1{
 header p{
     font-size:1.2rem;
     margin-top:10px;
+}
+
+.top-nav{
+    position:absolute;
+    top:14px;
+    right:20px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.nav-btn{
+    background:rgba(255,255,255,0.12);
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,0.18);
+    font-weight:600;
+}
+
+.nav-btn:hover{
+    background:rgba(255,255,255,0.22);
 }
 
 .container{
@@ -118,7 +142,12 @@ footer{
 </head>
 <body>
 
-<header>
+<header id="home">
+
+<nav class="top-nav">
+    <a href="#home" class="nav-btn">Home</a>
+    <a href="cv.pdf" download class="nav-btn"><i class="fa fa-download"></i> Download CV</a>
+</nav>
 
 <!-- Replace profile.jpg with your uploaded photo -->
 <img src="profile.jpg" alt="Phebe Zinnah Varpilah" class="profile-pic">
@@ -126,7 +155,7 @@ footer{
 <h1>Phebe Zinnah Varpilah</h1>
 
 <p>
-CEO � Digital Marketer �Technopreneurs
+CEO at Elegent Handles & Accessories, A Digital Marketer and A Technopreneurs
 </p>
 
 </header>
@@ -185,8 +214,9 @@ customer engagement, and business growth.
 <h2>Education</h2>
 
 <ul>
-<li><strong>Bachelor of Science</strong> (Expected 2026)</li>
-<li><strong>Diploma of Secondary Education</strong> � Ann Sandell Independent School (2020/2021)</li>
+<li><strong>Bachelor of Science</strong> ---- Apex University of Liberia(Expected 2026)</li>
+<li><strong>Diploma of Secondary Education</strong> ----- Ann Sandell Independent School (2020/2021)</li>
+<li><strong>Primary Education</strong> ----- St. Martin's Catholic High School (2005/2013)</li>
 </ul>
 
 </section>
@@ -208,8 +238,8 @@ customer engagement, and business growth.
 
 <br>
 
-<h3>Communication Officer � Liberian Youth Foundation</h3>
-<p><strong>2021 � 2022</strong></p>
+<h3>Communication Officer at Liberian Youth Foundation</h3>
+<p><strong>2021- 2022</strong></p>
 
 <ul>
 <li>Managed communication activities</li>
@@ -225,7 +255,7 @@ customer engagement, and business growth.
 <h2>Volunteer Experience</h2>
 
 <ul>
-<li>Member � Help for Hope Liberia (2022 � Present)</li>
+<li>Member of Help for Hope Liberia (2022 - Present)</li>
 </ul>
 
 </section>
@@ -323,7 +353,7 @@ Chat on WhatsApp
 
 <footer>
 <p>
-� 2026 Phebe Zinnah Varpilah | CEO, Elegant Handles & Accessories
+ 2026 Phebe Zinnah Varpilah | CEO, Elegant Handles & Accessories
 </p>
 </footer>
 
