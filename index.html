@@ -145,7 +145,7 @@ footer{
 <header id="home">
 
 <nav class="top-nav">
-    <a href="cv.pdf" download class="nav-btn"><i class="fa fa-download"></i> Download CV</a>
+    <a href="#" id="download-cv" class="nav-btn"><i class="fa fa-download"></i> Download CV</a>
 </nav>
 
 <!-- Replace profile.jpg with your uploaded photo -->
@@ -355,6 +355,24 @@ Chat on WhatsApp
  2026 Phebe Zinnah Varpilah | CEO, Elegant Handles & Accessories
 </p>
 </footer>
+
+<!-- html2pdf (bundled) for client-side PDF generation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+document.getElementById('download-cv').addEventListener('click', function(e){
+        e.preventDefault();
+        const element = document.querySelector('.container');
+        if(!element) return;
+        const opt = {
+                margin:       0.4,
+                filename:     'Phebe_Zinnah_Varpilah_CV.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(element).save();
+});
+</script>
 
 </body>
 </html>
